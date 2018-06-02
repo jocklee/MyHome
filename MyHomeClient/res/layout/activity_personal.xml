@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    android:orientation="vertical"
+    tools:context=".me.personalActivity"
+    tools:ignore="RtlHardcoded,ContentDescription,Deprecated,UnknownIdInLayout,HardcodedText,SpUsage" >
+
+    <RelativeLayout
+        android:id="@+id/top_tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentTop="true"
+        android:background="@color/topbar_bg" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="个人资料"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/per_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:text="编辑"
+            android:textColor="#3291fa"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dip"
+        android:layout_marginTop="80dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/per_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/personal_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/per_tel"
+            android:layout_marginTop="2dip"
+            android:background="@drawable/edittext_reg"
+            android:drawableLeft="@drawable/ww"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="@string/user_hint"
+            android:singleLine="true"
+            android:textColorHint="#999999"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/per_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/personal_tel"
+            android:layout_marginTop="15dip"
+            android:text="用户名"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/personal_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/per_name"
+            android:layout_marginTop="2dip"
+            android:background="@drawable/edittext_reg"
+            android:drawableLeft="@drawable/ww"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="@string/personal_name"
+            android:singleLine="true"
+            android:textColorHint="#999999"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/per_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/personal_name"
+            android:layout_marginTop="15dip"
+            android:text="性别"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rl"
+            android:orientation="horizontal"
+        android:layout_below="@+id/rl"
+         android:enabled="false"
+        android:layout_marginLeft="46dp" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:enabled="false"
+            android:checked="true"
+            android:text="男"
+            android:textSize="@dimen/activity_vertical_margin" />
+
+        <RadioButton
+       
+            android:id="@+id/radio1"
+              android:enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="女" />
+
+   
+    </RadioGroup>
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    android:orientation="vertical"
+    tools:context=".fun.RepairActivity"
+    tools:ignore="RtlHardcoded,ContentDescription,Deprecated,UnknownIdInLayout,HardcodedText,SpUsage" >
+
+    <RelativeLayout
+        android:id="@+id/top_tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentTop="true"
+        android:background="@color/topbar_bg" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="物业管理"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dip"
+        android:layout_marginTop="80dip"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tex_lxfs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系方式"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/repair_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tex_lxfs"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/edittext_reg"
+            android:drawableLeft="@drawable/ww"
+            android:ems="10"
+            android:hint="@string/user_hint"
+            android:numeric="integer"
+            android:singleLine="true"
+            android:textColorHint="#999999"
+            tools:ignore="HardcodedText" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/repair_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/repair_tel"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/edittext_reg"
+            android:drawableLeft="@drawable/ww"
+            android:ems="10"
+            android:hint="@string/txt_name"
+            android:singleLine="true"
+            android:textColorHint="#999999"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/repair_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/repair_name"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/edittext_reg"
+            android:drawableLeft="@drawable/ww"
+            android:ems="10"
+            android:hint="@string/txt_address"
+            android:singleLine="true"
+            android:textColorHint="#999999"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tex_why"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/repair_address"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dip"
+            android:text="报修原因"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/repair_why"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_below="@id/tex_why"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/edittext_reg"
+            android:drawableLeft="@drawable/ww"
+            android:ems="10"
+            android:hint="@string/txt_why"
+            android:singleLine="true"
+            android:textColorHint="#999999"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_refer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/repair_why"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/button_tj" />
+    </RelativeLayout>
+
+</RelativeLayout>

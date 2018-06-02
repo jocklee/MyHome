@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".login.RegActivity"
+    tools:ignore="RtlHardcoded,ContentDescription,Deprecated,UnknownIdInLayout,HardcodedText" >
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="20dip"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/reg_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_reg"
+            android:drawableLeft="@drawable/ww"
+            android:ems="10"
+            android:hint="@string/user_hint"
+            android:numeric="integer"
+            android:singleLine="true"
+            android:textColorHint="#999999"
+            tools:ignore="HardcodedText" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/reg_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_user"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/edittext_reg"
+            android:drawableLeft="@drawable/ww"
+            android:ems="10"
+            android:hint="@string/personal_name"
+            android:singleLine="true"
+            android:textColorHint="#999999"
+            tools:ignore="HardcodedText" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/reg_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_name"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/edittext_reg"
+            android:drawableLeft="@drawable/ww"
+            android:ems="10"
+            android:hint="@string/pwd_hint"
+            android:password="true"
+            android:singleLine="true"
+            android:textColorHint="#999999"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/reg_pwd2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_pwd"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/edittext_reg"
+            android:drawableLeft="@drawable/ww"
+            android:ems="10"
+            android:hint="@string/txt_repwd"
+            android:password="true"
+            android:singleLine="true"
+            android:textColorHint="#999999"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_pwd2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/button_zc" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:background="@drawable/textview_style"
+        android:text="@string/have_user"
+        android:textColor="#3291fa"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

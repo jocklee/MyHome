@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dumbo.myhome"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+
+    　　　　　　　
+    
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launger"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name="com.dumbo.myhome.login.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+
+            <!-- 运行首页 -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.dumbo.myhome.main.MainActivity" >
+        </activity>
+        <activity android:name="com.dumbo.myhome.login.RegActivity" >
+        </activity>
+        <activity android:name="com.dumbo.myhome.fun.RepairActivity" >
+        </activity>
+        <activity android:name="com.dumbo.myhome.fun.NewsActivity" >
+        </activity>
+        <activity android:name="com.dumbo.myhome.me.personalActivity" >
+        </activity>
+        <activity android:name="com.dumbo.myhome.fun.PayActivity" >
+        </activity>
+        <activity android:name="com.dumbo.myhome.fun.PwdActivity" >
+        </activity>
+        <activity android:name="com.dumbo.myhome.fun.JZActivity" >
+        </activity>
+        <activity android:name="com.dumbo.myhome.fun.payziyeActivity" >
+        </activity>
+        <activity android:name="com.dumbo.myhome.fun.FuningActivity" >
+        </activity>
+        <activity android:name="com.dumbo.myhome.fun.contactActivity" >
+        </activity>
+        <activity android:name="com.dumbo.myhome.fun.HuodongActivity" >
+        </activity>
+        <activity android:name="com.dumbo.myhome.fun.AddressActivity" >
+        </activity>
+        <activity android:name="com.dumbo.myhome.fun.idearActivity" >
+        </activity>
+       
+  
+    </application>
+
+</manifest>

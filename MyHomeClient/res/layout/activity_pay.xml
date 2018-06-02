@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    android:orientation="vertical"
+    tools:context=".fun.payziyeActivity"
+    tools:ignore="RtlHardcoded,ContentDescription,Deprecated,UnknownIdInLayout,HardcodedText,SpUsage" >
+
+    <RelativeLayout
+        android:id="@+id/top_tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentTop="true"
+        android:background="@color/topbar_bg" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="生活缴费"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="40dip"
+        android:layout_marginTop="80dip"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/pay_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/edittext_reg"
+            android:drawableLeft="@drawable/ww"
+            android:ems="10"
+            android:hint="@string/jz_tel"
+            android:singleLine="true"
+            android:textColorHint="#999999"
+            tools:ignore="HardcodedText" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/pay_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pay_tel"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/edittext_reg"
+            android:drawableLeft="@drawable/ww"
+            android:ems="10"
+            android:hint="@string/pay_money"
+            android:numeric="integer"
+            android:singleLine="true"
+            android:textColorHint="#999999"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_refer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rl"
+        android:layout_below="@+id/rl"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/button_jiaofei" />
+    
+
+</RelativeLayout>

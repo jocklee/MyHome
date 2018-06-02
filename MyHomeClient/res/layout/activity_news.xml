@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    android:orientation="vertical"
+    tools:context=".fun.RepairActivity"
+    tools:ignore="RtlHardcoded,ContentDescription,Deprecated,UnknownIdInLayout,HardcodedText,SpUsage" >
+
+    <RelativeLayout
+        android:id="@+id/top_tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentTop="true"
+        android:background="@color/topbar_bg" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="物业管理"
+            android:textSize="20dp" />
+    </RelativeLayout>
+    
+    
+
+    <LinearLayout
+        android:id="@+id/rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"    
+        android:layout_marginTop="200dip"
+        android:layout_marginLeft="100dip"
+        android:orientation="vertical" >
+
+          <TextView
+              android:id="@+id/tex_why"
+              android:layout_gravity="center_horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dip"
+              android:text="请注意小区环境卫生！"
+              android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>

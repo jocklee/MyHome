@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="NewApi" severity="ignore" />
+    <issue id="ShowToast" severity="ignore">
+        <ignore path="src/com/dumbo/myhome/login/LoginActivity.java" />
+    </issue>
+</lint>

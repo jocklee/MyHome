@@ -1,0 +1,169 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    android:orientation="vertical"
+    tools:context=".LoginActivity"
+    tools:ignore="RtlHardcoded,ContentDescription,Deprecated,UnknownIdInLayout" >
+
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="136dp"
+        android:layout_height="116dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/head1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="220dp"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables,RtlHardcoded" >
+
+        <TextView
+            android:id="@+id/txt_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="52dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textview_style"
+            android:text="@string/txt_newuser"
+            android:textColor="#3291fa"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/txt_forgetpwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textview_style"
+            android:text="@string/txt_forget"
+            android:textColor="#3291fa"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-250dp" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_up"
+                android:drawableLeft="@drawable/ww"
+                android:hint="@string/user_hint"
+                android:paddingTop="12dip"
+                android:singleLine="true"
+                android:textColorHint="#999999"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:id="@+id/btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/user"
+                android:layout_alignRight="@+id/user"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/btn" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:background="@drawable/edittext_down"
+            android:drawableLeft="@drawable/ww"
+            android:ems="10"
+            android:hint="@string/pwd_hint"
+            android:password="true"
+            android:singleLine="true"
+            android:textColorHint="#999999"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:background="@drawable/button_style1" />
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/edit_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_up"
+                    android:drawableLeft="@drawable/ww"
+                    android:hint="@string/user_hint"
+                    android:numeric="integer"
+                    android:singleLine="true"
+                    android:textColorHint="#999999" >
+                    <requestFocus />
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/xiala"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/edit_user"
+                    android:layout_alignRight="@+id/edit_user"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/btn" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edit_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/RelativeLayout01"
+                android:background="@drawable/edittext_down"
+                android:drawableLeft="@drawable/ww"
+                android:ems="10"
+                android:hint="@string/pwd_hint"
+                android:password="true"
+                android:singleLine="true"
+                android:textColorHint="#999999" />
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="130dp"
+                android:background="@drawable/button_style1" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

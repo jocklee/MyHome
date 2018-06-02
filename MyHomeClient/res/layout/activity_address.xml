@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    android:orientation="vertical"
+    tools:context=".fun.RepairActivity"
+    tools:ignore="RtlHardcoded,ContentDescription,Deprecated,UnknownIdInLayout,HardcodedText,SpUsage" >
+
+    <RelativeLayout
+        android:id="@+id/top_tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentTop="true"
+        android:background="@color/topbar_bg" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="收货地址"
+            android:textSize="20dp" />
+    </RelativeLayout>
+    
+    
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dip"
+        android:layout_marginTop="80dip"
+        android:gravity="center"
+         android:layout_gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/address_sheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/edittext_reg"
+            android:drawableLeft="@drawable/ww"
+            android:ems="10"
+            android:hint="省 例如：山东省"
+            android:singleLine="true"
+            android:textColorHint="#999999"
+            tools:ignore="HardcodedText" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/address_shi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address_sheng"
+            android:layout_marginTop="10dip"
+            android:drawableLeft="@drawable/ww"
+            android:background="@drawable/edittext_reg"
+            android:ems="10"
+            android:hint="市 例如：济南市"
+            
+            android:singleLine="true"
+            android:textColorHint="#999999"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/address_xian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ww"
+            android:layout_below="@id/address_shi"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/edittext_reg"
+            android:ems="10"
+            android:hint="县/区 例如：长清区"
+            android:singleLine="true"
+            android:textColorHint="#999999"
+            tools:ignore="HardcodedText" />
+        <EditText
+            android:id="@+id/address_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ww"
+            android:layout_below="@id/address_xian"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/edittext_reg"
+            android:ems="10"
+            android:hint="详细地址 例如：丁香路xxxx号"
+            android:singleLine="true"
+            android:textColorHint="#999999"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_refer5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address_more"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/button_save" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

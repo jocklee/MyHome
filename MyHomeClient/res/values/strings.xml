@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">物业管理</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="bottom_tab_know">首页</string>
+    <string name="bottom_tab_wantknow">周边</string>
+    <string name="bottom_tab_my">我的</string>
+     <string name="user_hint"> 手机号</string>
+     <string name="pwd_hint">密码</string>
+    <string name="txt_forget">忘记密码</string>
+     <string name="have_user">已有账号？直接登陆</string>
+     <string name="txt_repwd">确认密码</string>
+     <string name="txt_newuser">注册账号</string>
+      <string name="personal_name">用户名</string>
+     <string name="txt_name"> 户主名</string>
+     <string name="txt_address"> 详细地址 例如:8号楼3单元201室</string>
+     <string name="txt_why"> 报修原因</string>
+     <string name="txt_refer">提交</string>
+      <string name="pwd_old">原密码</string>
+       <string name="pwd_new1">新密码</string>
+        <string name="pwd_new2">确认密码</string>
+         <string name="jz_name">您的姓名</string>
+         <string name="jz_tel">您的联系方式</string>
+         <string name="jz_address">您的详细住址</string>
+          <string name="jz_kind">家政类型  例如：保姆 临时</string>
+          <string name="jz_money">您希望的价格区间</string>
+          <string name="jz_work">请注明家政要完成的工作</string>
+           <string name="pay_money">缴费金额</string>
+
+</resources>
